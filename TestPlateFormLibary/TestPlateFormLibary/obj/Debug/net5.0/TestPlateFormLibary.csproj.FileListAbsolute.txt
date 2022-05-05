@@ -1,0 +1,5 @@
+E:\C#\GitHub\Clone Project\TestPlateForm\TestPlateFormLibary\TestPlateFormLibary\obj\Debug\net5.0\TestPlateFormLibary.csproj.AssemblyReference.cache
+E:\C#\GitHub\Clone Project\TestPlateForm\TestPlateFormLibary\TestPlateFormLibary\obj\Debug\net5.0\TestPlateFormLibary.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\GitHub\Clone Project\TestPlateForm\TestPlateFormLibary\TestPlateFormLibary\obj\Debug\net5.0\TestPlateFormLibary.AssemblyInfoInputs.cache
+E:\C#\GitHub\Clone Project\TestPlateForm\TestPlateFormLibary\TestPlateFormLibary\obj\Debug\net5.0\TestPlateFormLibary.AssemblyInfo.cs
+E:\C#\GitHub\Clone Project\TestPlateForm\TestPlateFormLibary\TestPlateFormLibary\obj\Debug\net5.0\TestPlateFormLibary.csproj.CoreCompileInputs.cache

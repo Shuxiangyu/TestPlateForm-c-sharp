@@ -9,10 +9,14 @@ namespace TestPlateFormLibary
 
         #region Property
 
-       /// <summary>
-       /// 缓存每个dll反射后的基础数据
-       /// </summary>
-        public Cache<string, Reflectpara> dllreflectMsg { get; set; }
+        /// <summary>
+        /// 缓存每个dll反射后的基础数据
+        /// </summary>
+        public Cache<string, Reflectpara> dllreflectMsg
+        {
+            get; 
+            set;
+        }
         /// <summary>
         /// 统一函数接口的委托
         /// </summary>
@@ -38,16 +42,16 @@ namespace TestPlateFormLibary
             //此为底层Driver实现
             Type type;
             hashSetMsg = null;
-            bool result = false;
+            var result = false;
             object classInstance;
             string methodName, classNameKey;
  
             try
             {
-                List<string> config = new List<string>(testPara.config.TrimStart().TrimEnd().Split(new[] { "\r\n" }, StringSplitOptions.None));
+                var config = new List<string>(testPara.config.TrimStart().TrimEnd().Split(new[] { "\r\n" }, StringSplitOptions.None));
                 methodName = testPara.methodName;
                 classNameKey = testPara.classNameKey;
-                if (dllreflectMsg == null & classNameKey == null & methodName == null & config == null) return false;
+                if (dllreflectMsg == null&string.IsNullOrEmpty(classNameKey) & string.IsNullOrEmpty(methodName)) return false;
                 type = dllreflectMsg.Get(classNameKey).type;
                 classInstance = dllreflectMsg.Get(classNameKey).classInstance;
                 if (type == null & classInstance == null) return false;
@@ -63,7 +67,7 @@ namespace TestPlateFormLibary
             {
                 type = null;
                 classInstance = null;
-                methodName = classNameKey = String.Empty;
+                methodName = classNameKey = null;
             }
             return result;
         }
