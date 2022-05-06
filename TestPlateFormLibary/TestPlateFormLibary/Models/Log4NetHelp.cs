@@ -324,21 +324,21 @@ namespace TestPlateFormLibary.Models
             BasicConfigurator.Configure(appender);
         }
 
-        public static void LoadEventLogAppender()
-        {
-            EventLogAppender appender = new EventLogAppender();
-            appender.Name = "EventLogAppender";
+        //public static void LoadEventLogAppender()
+        //{
+        //    var appender = new EventLogAppender();
+        //    appender.Name = "EventLogAppender";
 
-            PatternLayout patternLayout = new PatternLayout
-            {
-                ConversionPattern = _ConversionPattern
-            };
-            patternLayout.ActivateOptions();
-            appender.Layout = patternLayout;
+        //    PatternLayout patternLayout = new PatternLayout
+        //    {
+        //        ConversionPattern = _ConversionPattern
+        //    };
+        //    patternLayout.ActivateOptions();
+        //    appender.Layout = patternLayout;
 
-            appender.ActivateOptions();
-            BasicConfigurator.Configure(appender);
-        }
+        //    appender.ActivateOptions();
+        //    BasicConfigurator.Configure(appender);
+        //}
 
         #endregion
 
